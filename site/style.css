@@ -1,0 +1,20 @@
+body {
+    background: linear-gradient(to bottom, #FFA500, #000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
