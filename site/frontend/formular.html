@@ -9,7 +9,7 @@
 <body>
     <h1>Formular de inscriere</h1>
     <a href="index.html"><button>Pagina principala</button></a>
-    <form action="post">
+    <form action="http://localhost:8080/inscriere/adauga" method="post">
         <div class="ceva">
             <label for="nume">Nume:</label>
             <input type="text" name="nume" id="nume">
@@ -31,8 +31,8 @@
         </div>
 
         <div class="ceva">
-            <label for="concurs">Participi la concursul de costume?</label>
-            <input type="checkbox" name="concurs" id="concurs">
+            <label for="costume">Participi la concursul de costume?</label>
+            <input type="checkbox" name="costume" id="costume">
         </div>
 
         <div class="ceva">
@@ -42,6 +42,7 @@
 
         <button type="submit" id="btnSubmit">Inscrie-te!</button>
     </form>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>

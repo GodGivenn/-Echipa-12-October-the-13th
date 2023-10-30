@@ -4,6 +4,9 @@ const controller = {
     adaugaInscriere: (req, res) => {
         const {nume, prenume, email, telefon, costume, dovleci} = req.body;
 
+        console.log(req.body);
+        console.log({nume, prenume, email, telefon, costume, dovleci});
+
         let ok = 1;
         if (/\d/.test(nume) === true) {
             ok = 0;
