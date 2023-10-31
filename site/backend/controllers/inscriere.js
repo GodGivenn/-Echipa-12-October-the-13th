@@ -2,6 +2,10 @@ const Inscrieri = require('../models').inscriere;
 
 const controller = {
     adaugaInscriere: (req, res) => {
+
+        res.header('Access-Control-Allow-Origin', '*');
+        req.header('Access-Control-Allow-Origin', '*');
+
         const {nume, prenume, email, telefon, costume, dovleci} = req.body;
 
         console.log(req.body);
