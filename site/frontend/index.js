@@ -1,4 +1,4 @@
-import axios from "./node_modules/axios";
+// import axios from "./node_modules/axios";
 // const axios = require('axios');
 
 const URL = "http://localhost:8080/inscriere/adauga";
@@ -12,7 +12,13 @@ const dovleci = document.getElementById('dovleci');
 
 const btnSubmit = document.getElementById('btnSubmit');
 
-btnSubmit.addEventListener('click', () => {
+const headerObj = {
+  headers: {
+      'Content-Type': 'application/json'
+  }
+}
+
+btnSubmit.addEventListener('click', async () => {
 
   const data = {
     nume: nume.value,
@@ -23,9 +29,9 @@ btnSubmit.addEventListener('click', () => {
     dovleci: dovleci.checked
   };
 
-  console.log(data);
+  // console.log(data);
 
-  axios.post(URL, data)
+  await axios.post(URL, data, headerObj)
     .then(response => {
       console.log(response.data);
     })
