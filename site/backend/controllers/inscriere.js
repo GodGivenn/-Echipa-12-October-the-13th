@@ -3,8 +3,8 @@ const Inscrieri = require('../models').inscriere;
 const controller = {
     adaugaInscriere: (req, res) => {
 
-        res.header('Access-Control-Allow-Origin', '*');
-        req.header('Access-Control-Allow-Origin', '*');
+        // res.header('Access-Control-Allow-Origin', '*');
+        // req.header('Access-Control-Allow-Origin', '*');
 
         const {nume, prenume, email, telefon, costume, dovleci} = req.body;
 
@@ -77,7 +77,12 @@ const controller = {
         .catch(err => {
             res.status(500).send(err);
         })
-    }
+    },
+    // getData: (req, res) => {
+    //     const response = req.body;
+    //     console.log("asta e response-ul tau", response);
+    //     res.status(200).send(response);
+    // }
 };
 
 module.exports = controller;
