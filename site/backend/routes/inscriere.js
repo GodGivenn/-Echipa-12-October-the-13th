@@ -11,6 +11,6 @@ router.get('/getAllCostume', inscriereController.getAllCostume);
 
 router.get('/getAllDovleci', inscriereController.getAllDovleci);
 
-
+// router.post('/receiveData', inscriereController.getData);
 
 module.exports = router;
