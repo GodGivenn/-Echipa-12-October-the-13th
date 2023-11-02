@@ -1,17 +1,80 @@
 body {
-    background: linear-gradient(to bottom, #FFA500, #000);
+    background: linear-gradient(to bottom, #000000, #2a1c00);
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    font-size: 3rem;
+.container {
+    position:relative;
+}
+
+.october-fundal{
+    display: block;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+    z-index: 1;
+    position: relative;
+}
+
+.title {
+    font-size: 5vw;
     margin-top: 50px;
+    color: #ffffff;
+    position: absolute; /* Face textul absolut poziționat în interiorul imaginii de fundal */
+    top: 40%; /* Îl poziționează pe jumătatea înălțimii imaginii */
+    left: 50%; /* Îl poziționează pe jumătatea lățimii imaginii */
+    transform: translate(-50%, -70%);
+    z-index: 2;
+}
+
+.subtitle {
+    position: absolute;
+    font-size: 2vw; /* Ajustează dimensiunea subtitlului la preferințele tale */
+    margin-top: 10px; /* Ajustează marginea superioară la preferințele tale */
+    color: #ffd6ad; /* Schimbă culoarea textului la preferințele tale */
+    z-index: 2;
+    top:50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+
+}
+
+.logo{
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    z-index: 10;
+    width: 6%;
+    height: auto;
+}
+
+.descriere-eveniment{
+    position: relative;
+    color:white;
+    background-color: #ff95008b;
+    box-shadow: 0 0 15px #ffcc00;
+    margin: 0 15%;
+    padding: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    height: 100%;
+}
+
+.descriere-eveniment p{
+
+    border-radius: 0px;
+    text-align: justify;
+    font-size: medium;
 }
 
 h4 {
@@ -26,4 +89,23 @@ form {
 
 .ceva {
     margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+    .title {
+        top: 25%;
+        font-size: 5vw;
+    }
+
+    .subtitle {
+        font-size: 2vw;
+        top: 40%;
+    }
+
+    .descriere-eveniment{
+        margin: 0 5%;
+        font-size: smaller;
+        top: 75%;
+        transform: translateY(-25%);
+    }
 }
