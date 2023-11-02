@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #000000, #2a1c00);
+    background: linear-gradient(to bottom, #000000, #201500);
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #fff;
@@ -27,25 +27,31 @@ body {
 
 .title {
     font-size: 5vw;
+    font-weight: bold;
     margin-top: 50px;
     color: #ffffff;
-    position: absolute; /* Face textul absolut poziționat în interiorul imaginii de fundal */
-    top: 40%; /* Îl poziționează pe jumătatea înălțimii imaginii */
-    left: 50%; /* Îl poziționează pe jumătatea lățimii imaginii */
+    position: absolute;
+    top: 40%;
+    left: 50%;
     transform: translate(-50%, -70%);
     z-index: 2;
 }
 
 .subtitle {
     position: absolute;
-    font-size: 2vw; /* Ajustează dimensiunea subtitlului la preferințele tale */
-    margin-top: 10px; /* Ajustează marginea superioară la preferințele tale */
-    color: #ffd6ad; /* Schimbă culoarea textului la preferințele tale */
+    font-size: 2vw;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffd6ad;
     z-index: 2;
     top:50%;
     transform: translate(-50%, -50%);
     left: 50%;
+}
 
+.highlight {
+    font-weight: bold;
+    color: #FFA500;
 }
 
 .logo{
@@ -60,8 +66,9 @@ body {
 .descriere-eveniment{
     position: relative;
     color:white;
-    background-color: #ff95008b;
-    box-shadow: 0 0 15px #ffcc00;
+    background-color: #ff950086;
+    box-shadow: 0 0 50px #ffcc00;
+    border-radius: 20px;
     margin: 0 15%;
     padding: 1%;
     top: 50%;
@@ -72,7 +79,6 @@ body {
 
 .descriere-eveniment p{
 
-    border-radius: 0px;
     text-align: justify;
     font-size: medium;
 }
