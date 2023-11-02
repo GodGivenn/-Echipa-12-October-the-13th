@@ -1,221 +1,302 @@
 body {
-    background: linear-gradient(to bottom, #000000, #201500);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  background: linear-gradient(to bottom, #000000, #201500);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    position:relative;
+  position: relative;
 }
 
-.october-fundal{
-    display: block;
-    line-height: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    filter: brightness(50%);
-    z-index: 1;
-    position: relative;
+.october-fundal {
+  display: block;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  filter: brightness(50%);
+  z-index: 1;
+  position: relative;
 }
 
 .title {
-    font-size: 5vw;
-    font-weight: bold;
-    margin-top: 50px;
-    color: #ffffff;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    z-index: 2;
+  font-size: 5vw;
+  font-weight: bold;
+  margin-top: 50px;
+  color: #ffffff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  z-index: 2;
 }
 
 .subtitle {
-    position: absolute;
-    font-size: 2vw;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #ffd6ad;
-    z-index: 2;
-    top:50%;
-    transform: translate(-50%, -50%);
-    left: 50%;
+  position: absolute;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ffd6ad;
+  z-index: 2;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
 
-.formular{
-    position: absolute;
-    font-size: 2vw;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #ffd6ad;
-    z-index: 2;
-    top:70%;
-    transform: translate(-50%, -50%);
-    left: 50%;
+.formular-titlu {
+  font-size: 3vw;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ff9224;
+  z-index: 2;
+  left: 50%;
 }
 
-.formular-button-class{
-    width: 100%;
-    padding: 10px;
-    font-size: large;
-    background-color: #FFA500;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: background-color 1s, border-radius 0.4s;
+.formular-input {
+  border-radius: 7px;
+  padding: 5px;
+  border: none;
+  background-color: rgb(213, 213, 213);
+}
+
+.formular {
+  position: absolute;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ffd6ad;
+  z-index: 2;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.formular-button-class {
+  width: 100%;
+  padding: 10px;
+  font-size: large;
+  background-color: #ffa500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 1s, border-radius 0.4s;
 }
 
 .formular-button-class:hover {
-    background-color: #d5360e;
-    border-radius: 0px;
+  background-color: #d5360e;
+  border-radius: 0px;
 }
 
 .highlight {
-    font-weight: bold;
-    color: #FFA500;
+  font-weight: bold;
+  color: #ffa500;
 }
 
-.logo{
-    position: fixed;
-    top: 2%;
-    right: 2%;
-    z-index: 10;
-    width: 6%;
-    height: auto;
+.logo {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  z-index: 10;
+  width: 6%;
+  height: auto;
 }
 
-.descriere-eveniment{
-    position: relative;
-    color:white;
-    background-color: #ff950086;
-    box-shadow: 0 0 50px #ffcc00;
-    border-radius: 20px;
-    margin: 0 15%;
-    padding: 1%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 3;
-    height: 100%;
+.formular-inscriere {
+  width: auto;
+  position: relative;
+  color: white;
+  background-color: #ff950086;
+  box-shadow: 0 0 50px #ffcc00;
+  border-radius: 20px;
+  margin: 0 15%;
+  padding: 7% 3%;
+  top: 25%;
+  transform: translateY(-25%);
+  z-index: 3;
+  height: 100%;
 }
 
-.descriere-eveniment p{
-
-    text-align: justify;
-    font-size: medium;
+.descriere-eveniment {
+  position: relative;
+  color: white;
+  background-color: #ff950086;
+  box-shadow: 0 0 50px #ffcc00;
+  border-radius: 20px;
+  margin: 0 15%;
+  padding: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  height: 100%;
 }
 
-.titlu-activitate{
-    font-weight: bold;
+.descriere-eveniment p {
+  text-align: justify;
+  font-size: medium;
+}
+
+.titlu-activitate {
+  font-weight: bold;
 }
 
 h4 {
-    font-size: 1.2rem;
-    margin-top: 20px;
+  font-size: 1.2rem;
+  margin-top: 20px;
 }
 
 form {
-    margin-top: 100px;
-    
+  margin-top: 100px;
 }
 
 .ceva {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
-.titlu-activitate{
-    font-size: 40px;
+.titlu-activitate {
+  font-size: 40px;
 }
 
-.activitate-dreapta{
-    text-align: right;
-    margin-right: 10%;
-    font-size: large;
+.activitate-dreapta {
+  text-align: right;
+  margin-right: 10%;
+  font-size: large;
 }
 
-.activitate-stanga{
-    text-align: justify;
-    margin-left: 10%;
-    font-size: large;
+.activitate-stanga {
+  text-align: justify;
+  margin-left: 10%;
+  font-size: large;
 }
 
 .concurs-grid-container-st {
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
-    gap: 80px;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  gap: 80px;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .concurs-grid-container-dr {
-    display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
-    gap: 80px;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  gap: 80px;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-
 
 .text-dreapta {
-    text-align: justify;
-    font-size: medium;
-    padding: 0 15px;
-    border-radius: 15px;
-    background-color: #573100a6;
-    box-shadow: 0 0 15px #9a4500;
+  text-align: justify;
+  font-size: medium;
+  padding: 0 15px;
+  border-radius: 15px;
+  background-color: #573100a6;
+  box-shadow: 0 0 15px #9a4500;
 }
 
-.text-stanga{
-    text-align: justify;
-    font-size: medium;
-    padding: 0 15px;
-    border-radius: 15px;
-    background-color: #573100a6;
-    box-shadow: 0 0 15px #9a4500;
+.text-stanga {
+  text-align: justify;
+  font-size: medium;
+  padding: 0 15px;
+  border-radius: 15px;
+  background-color: #573100a6;
+  box-shadow: 0 0 15px #9a4500;
 }
 
-.poza-st{
-    width: 300px; /* Setează lățimea imaginii la 100% pentru a ocupa 1/4 din lățime */
-    max-width: 100%;
-    height: auto;
-    margin-right: 50%;
-    border-radius: 25px;
-    box-shadow: 0 0 50px #e73c10;
+.poza-st {
+  width: 300px; /* Setează lățimea imaginii la 100% pentru a ocupa 1/4 din lățime */
+  max-width: 100%;
+  height: auto;
+  margin-right: 50%;
+  border-radius: 25px;
+  box-shadow: 0 0 50px #e73c10;
 }
 
-.poza-dr{
-    width: 300px; /* Setează lățimea imaginii la 100% pentru a ocupa 1/4 din lățime */
-    max-width: 100%;
-    height: auto;
-    margin-right: 50%;
-    border-radius: 25px;
-    box-shadow: 0 0 50px #e73c10;
+.poza-dr {
+  width: 300px; /* Setează lățimea imaginii la 100% pentru a ocupa 1/4 din lățime */
+  max-width: 100%;
+  height: auto;
+  margin-right: 50%;
+  border-radius: 25px;
+  box-shadow: 0 0 50px #e73c10;
 }
 
+.formular-submit-btn {
+  width: 25%;
+}
+
+.formular-submit-btn {
+  margin-top: 5%;
+}
 @media (max-width: 767px) {
-    .title {
-        top: 25%;
-        font-size: 5vw;
-    }
+  .logo {
+    width: 15%;
+  }
 
-    .subtitle {
-        font-size: 2vw;
-        top: 40%;
-    }
+  .title {
+    top: 25%;
+    font-size: 6vw;
+  }
 
-    .descriere-eveniment{
-        margin: 0 5%;
-        font-size: smaller;
-        top: 75%;
-        transform: translateY(-25%);
-    }
+  .subtitle {
+    font-size: 3vw;
+    top: 50%;
+  }
+
+  .descriere-eveniment {
+    margin: 0 3%;
+    font-size: xx-small;
+    top: 75%;
+    transform: translateY(-15%);
+  }
+
+  .descriere-eveniment p {
+    text-align: justify;
+    font-size: medium;
+  }
+
+  .activitate-stanga,
+  .activitate-dreapta {
+    text-align: center;
+    margin: 0;
+  }
+
+  .concurs-grid-container-st,
+  .concurs-grid-container-dr {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .text-dreapta,
+  .text-stanga {
+    text-align: justify;
+  }
+
+  .poza-st,
+  .poza-dr {
+    width: 100%; /* Lățimea imaginii ocupă întreaga lățime a containerului */
+    margin-right: 0; /* Eliminăm marginea din dreapta */
+  }
+
+  .formular-inscriere {
+    top: -10%;
+    transform: translateY(10%);
+  }
+
+  .formular-titlu {
+    font-size: 10vw;
+  }
+
+  .formular-submit-btn {
+    width: 50%;
+  }
 }
