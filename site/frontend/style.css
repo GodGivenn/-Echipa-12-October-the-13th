@@ -49,6 +49,35 @@ body {
     left: 50%;
 }
 
+.formular{
+    position: absolute;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffd6ad;
+    z-index: 2;
+    top:70%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.formular-button-class{
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 1s, border-radius 0.4s;
+}
+
+.formular-button-class:hover {
+    background-color: #d5360e;
+    border-radius: 0px;
+}
+
 .highlight {
     font-weight: bold;
     color: #FFA500;
@@ -83,6 +112,10 @@ body {
     font-size: medium;
 }
 
+.titlu-activitate{
+    font-weight: bold;
+}
+
 h4 {
     font-size: 1.2rem;
     margin-top: 20px;
@@ -95,6 +128,77 @@ form {
 
 .ceva {
     margin: 20px 0;
+}
+
+.titlu-activitate{
+    font-size: 40px;
+}
+
+.activitate-dreapta{
+    text-align: right;
+    margin-right: 10%;
+    font-size: large;
+}
+
+.activitate-stanga{
+    text-align: justify;
+    margin-left: 10%;
+    font-size: large;
+}
+
+.concurs-grid-container-st {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    gap: 80px;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.concurs-grid-container-dr {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 80px;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.text-dreapta {
+    text-align: justify;
+    font-size: medium;
+    padding: 0 15px;
+    border-radius: 15px;
+    background-color: #573100a6;
+    box-shadow: 0 0 15px #9a4500;
+}
+
+.text-stanga{
+    text-align: justify;
+    font-size: medium;
+    padding: 0 15px;
+    border-radius: 15px;
+    background-color: #573100a6;
+    box-shadow: 0 0 15px #9a4500;
+}
+
+.poza-st{
+    width: 300px; /* Setează lățimea imaginii la 100% pentru a ocupa 1/4 din lățime */
+    max-width: 100%;
+    height: auto;
+    margin-right: 50%;
+    border-radius: 25px;
+    box-shadow: 0 0 50px #e73c10;
+}
+
+.poza-dr{
+    width: 300px; /* Setează lățimea imaginii la 100% pentru a ocupa 1/4 din lățime */
+    max-width: 100%;
+    height: auto;
+    margin-right: 50%;
+    border-radius: 25px;
+    box-shadow: 0 0 50px #e73c10;
 }
 
 @media (max-width: 767px) {
