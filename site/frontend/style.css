@@ -87,6 +87,7 @@ body {
   cursor: pointer;
   border-radius: 50px;
   transition: background-color 1s, border-radius 0.4s;
+  box-shadow: 5px 5px 5px #302809;
 }
 
 .formular-button-class:hover {
@@ -236,6 +237,37 @@ form {
 .formular-submit-btn {
   margin-top: 5%;
 }
+
+.paragraf-eroare {
+  z-index: 500;
+  position: absolute;
+  top: 6%;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* text-align: center; */
+
+  /* color: red; */
+  background-color: '#ff00008a';
+  border-radius: 15px;
+  padding: 15px;
+  font-weight: bold;
+
+  box-shadow: 0 0 15px black;
+  
+  
+}
+
+.check {
+  /* padding: 15px; */
+  width: 25px;
+  /* font-size: 15rem; */
+  height: 25px;
+
+}
+
+
 @media (max-width: 767px) {
   .logo {
     width: 15%;
@@ -292,6 +324,10 @@ form {
     transform: translateY(10%);
   }
 
+  .eroare {
+    padding-top: 100px;
+  }
+
   .formular-titlu {
     font-size: 10vw;
   }
@@ -299,4 +335,5 @@ form {
   .formular-submit-btn {
     width: 50%;
   }
+
 }

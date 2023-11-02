@@ -27,16 +27,16 @@ app.post("/adaugaInscriere", (req, res) => {
         console.log({nume, prenume, email, telefon, costume, dovleci});
 
         let ok = 1;
-        if (/\d/.test(nume) === true) {
+        if (/\d/.test(nume) === true || nume.length < 1) {
             ok = 0;
             res.status(500).send('Nume incorect!');
-        } else if (/\d/.test(prenume) === true) {
+        } else if (/\d/.test(prenume) === true || prenume.length < 1) {
             ok = 0;
             res.status(500).send('Prenume incorect!');
-        } else if (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email) === false) {
+        } else if (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email) === false || email.length < 1) {
             ok = 0;
             res.status(500).send('Email incorect!');
-        } else if (/^([0-9]+)$/.test(telefon) === false) {
+        } else if (/^([0-9]+)$/.test(telefon) === false || telefon.length < 1 || telefon.length > 12) {
             ok = 0;
             res.status(500).send('Telefon incorect!');
         } else if (typeof(costume) != 'boolean' || typeof(dovleci) != 'boolean') {
